@@ -1,0 +1,10 @@
+Volkswagen
+
+1. Create HBase table
+create 'zem:events','a','m' | hbase shell
+2. Export env variables
+export FILE_PATH=/tmp/VWTripSimulation
+export TABLE_NAME='zem:events'
+3. Copy scala file
+4. Run
+spark2-shell --packages com.hortonworks:shc-core:1.1.1-2.1-s_2.11 --repositories https://repo.hortonworks.com/content/groups/public/ -i transform.scala
